@@ -44,11 +44,11 @@
                         <td th:text="${produto.preco}"></td>
                         <td th:text="${produto.categoria != null ? produto.categoria.nome : 'Sem categoria'}"></td>
 
-                        <td><a th:href="@{'/atualizar/' + ${produto.id}}">Atualizar</a></td>
-                        <td>
-                            <form th:action="@{'/deletarproduto/' + ${produto.id}}" method="post">
-                                <input type="submit" value="Apagar">
-                            </form>
+                        <td sec:authorize="hasRole('ADMIN')">
+                            <a th:href="@{'/atualizar/' + ${produto.id}}">Atualizar</a>
+                        </td>
+                        <td sec:authorize="hasRole('ADMIN')">
+                            <a th:href="@{'/deletarproduto/' + ${produto.id}}">Apagar</a></td>
                         </td>
                     </tr>
                 </tbody>

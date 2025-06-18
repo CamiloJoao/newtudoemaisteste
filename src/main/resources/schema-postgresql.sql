@@ -6,13 +6,6 @@ CREATE TABLE IF NOT EXISTS users (
   enabled BOOLEAN DEFAULT TRUE
 );
 
-
-CREATE TABLE IF NOT EXISTS categoria (
-    id SERIAL PRIMARY KEY,
-    nome VARCHAR(20)
-);
-
-
 CREATE TABLE IF NOT EXISTS produto (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(50),
@@ -21,6 +14,13 @@ CREATE TABLE IF NOT EXISTS produto (
     categoria INT,
     CONSTRAINT fk_categoria FOREIGN KEY (categoria) REFERENCES categoria(id)
 );
+
+CREATE TABLE IF NOT EXISTS categoria (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(20)
+);
+
+
 
 INSERT INTO users (username, password, role, enabled)
 VALUES ('user',
