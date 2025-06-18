@@ -7,4 +7,4 @@ COPY src ./src
 RUN chmod 777 mvnw
 RUN ./mvnw package
 RUN ls -l ./target
-CMD ["java","-jar","target/tudoemais-new.war"]
+CMD ["java","-jar","target/tudoemais-new-0.0.1-SNAPSHOT.war"]
