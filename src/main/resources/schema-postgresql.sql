@@ -20,14 +20,3 @@ CREATE TABLE IF NOT EXISTS categoria (
     nome VARCHAR(20)
 );
 
-
-
-INSERT INTO users (username, password, role, enabled)
-VALUES ('user',
-'$2a$12$vLYbNHhMjCaffmemGzh2au.TAtMATl24Y9do5fqDxNPJ9Xvm4kLQy',
-'ROLE_USER', TRUE);
- 
-INSERT INTO users (username, password, role, enabled)
-VALUES ('admin',
-'$2a$12$yXWeF5BmghdWH25UPCyNR.vGKhqfOHHjCxa4qHJdvCN.AzVdSH9vG',
-'ROLE_ADMIN', TRUE);

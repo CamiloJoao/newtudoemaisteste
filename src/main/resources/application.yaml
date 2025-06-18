@@ -3,9 +3,9 @@ server:
 
 spring:
     datasource:
-        url: jdbc:postgresql://dpg-d1927q15pdvs73ds3080-a.oregon-postgres.render.com:5432/tudoemaisdb
-        username:  tudoemaisdb_user
-        password: CJRsE5YdO6qnbj2cCGhly5aci052WKWm
+        url: jdbc:postgresql://dpg-d19ehkili9vc739vnmg0-a.oregon-postgres.render.com:5432/tudoemaisdb
+        username:  tudoemaisdb_5cdt_user
+        password: TlI1X7zKBKSaK9ACNBwNt0h0DErexZ0o
         driver-class-name: org.postgresql.Driver
         initialize: true
     
