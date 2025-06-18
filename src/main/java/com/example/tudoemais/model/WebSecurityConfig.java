@@ -59,7 +59,8 @@ public class WebSecurityConfig {
             )
             .exceptionHandling(ex -> ex
                 .accessDeniedPage("/403")
-            );
+            )
+            .authenticationProvider(authenticationProvider(userDetailsService()));
 
         return http.build();
     }
